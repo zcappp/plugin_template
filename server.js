@@ -12,9 +12,9 @@ const webpack = require("webpack")
 const webpackDevMiddleware = require("webpack-dev-middleware")
 const webpackConfig = require("./webpack.config")
 const compiler = webpack(webpackConfig)
-app.use(webpackDevMiddleware(compiler, { publicPath: "/static/" }))
+app.use(webpackDevMiddleware(compiler, { publicPath: "/build/" }))
 
-app.use("/static", express.static(__dirname + '/static'))
+app.use("/build", express.static(__dirname + '/build'))
 app.get("/", (req, res) => {
     res.send(HTML)
 })
