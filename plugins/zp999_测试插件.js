@@ -1,7 +1,7 @@
 import React from "react"
 
 function render(ref) {
-
+    return <div>测试插件</div>
 }
 
 function onMounted(ref) {
@@ -10,7 +10,7 @@ function onMounted(ref) {
 
 const css = `
 .zp999 {
-    
+    color: red;
 }
 `
 
