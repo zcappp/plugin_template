@@ -4,7 +4,7 @@ function render(ref) {
     return <div>测试插件</div>
 }
 
-function onInit(ref) {
+function init(ref) {
 
 }
 
@@ -18,6 +18,6 @@ $plugin({
     id: "zp999",
     props: [],
     render,
-    onInit,
+    init,
     css
 })
